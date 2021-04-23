@@ -1,0 +1,17 @@
+<h1>Hello  users!</h1>
+      <div >
+        {
+          users.map((user) => {
+            return (
+              <div key={user.id}>
+                <p>
+                  <strong>{user.first_name}</strong>
+                </p>
+                <p>{user.email}</p>
+                <img key={user.avatar} src={user.avatar} />
+                <hr/>
+              </div>
+            );
+          })}
+        
+      </div>

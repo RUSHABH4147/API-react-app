@@ -1,0 +1,68 @@
+.glass{
+    
+position: absolute;
+width: 395px;
+height: 594px;
+left: 550px;
+top: 95px;
+
+background: rgba(255, 255, 255, 0.48);
+box-shadow: 30px 30px 20px 6px rgba(0, 0, 0, 0.25);
+border-radius: 33px;
+}
+
+.cityicon{
+    width: 395px;
+height: 200px;
+left: 543px;
+top: 316px;
+border-radius: 18px;
+}
+
+*{
+color: rgb(255, 255, 255);
+font-size: large;
+}
+.citi{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    stroke: none;
+    outline: none;
+    border: none;
+
+    color: black;
+}
+option{
+    color: black;
+}
+
+.inputciti{
+    padding: 6px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: none;
+    stroke: none;
+    outline: none;
+    color: black;
+}
+.citytemp{
+    font-size: 26px;
+    color: azure;
+}
+
+.svg{
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    left: -503px;
+    top: 130px;
+}
+
+.svg1{
+    position: absolute;
+    width: 500px;
+    height: 260px;
+    left: 390px;
+    top: 104px;
+}
