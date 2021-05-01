@@ -4,8 +4,6 @@ import tempimg from "./tempimg.jpg";
 import temp from "./temp.svg";
 import temp1 from "./temp1.svg";
 
-
-
 export default function Weather() {
   const [city, setcity] = useState(null);
   const [savecity, setsavecity] = useState();
@@ -18,14 +16,17 @@ export default function Weather() {
     //   console.log(resdata.main, resdata);
     //   setsavecity(resdata.main, resdata.weather);
 
-      var requestOptions = {
-          method: 'GET',
-          redirect: 'follow'
-        };
-      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=0c9cd51e833867535bc069be025e9b30`, requestOptions)
-      .then(response => response.json())
-      .then(result => setsavecity(result.main))
-      .catch(error => console.log('error', error));
+    var requestOptions = {
+      method: "GET",
+      redirect: "follow",
+    };
+    fetch(
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=0c9cd51e833867535bc069be025e9b30`,
+      requestOptions
+    )
+      .then((response) => response.json())
+      .then((result) => setsavecity(result.main))
+      .catch((error) => console.log("error", error));
     // };
     // fetchapi();
   }, [city]);
@@ -59,9 +60,8 @@ export default function Weather() {
           />
         </div>
         <div>
-            <img className="svg" src={temp} alt="svg"/>
-            <img className="svg1" src={temp1} alt="svg"/>
-
+          <img className="svg" src={temp} alt="svg" />
+          <img className="svg1" src={temp1} alt="svg" />
         </div>
         <div className="city">
           <h3>{city}</h3>
@@ -74,7 +74,9 @@ export default function Weather() {
               <img className="cityicon" src={tempimg} alt="icon" />
             </div>
             <div>
-              <h1 className="citytemp">Temperature : <b>{savecity.temp}°C</b></h1>
+              <h1 className="citytemp">
+                Temperature : <b>{savecity.temp}°C</b>
+              </h1>
             </div>
             <div>
               <p className="citytext">feels_like: {savecity.feels_like}°C</p>

@@ -3,7 +3,7 @@
 position: absolute;
 width: 395px;
 height: 594px;
-left: 550px;
+left: 600px;
 top: 95px;
 
 background: rgba(255, 255, 255, 0.48);
@@ -20,7 +20,7 @@ border-radius: 18px;
 }
 
 *{
-color: rgb(255, 255, 255);
+color: rgb(15, 9, 7);
 font-size: large;
 }
 .citi{
@@ -65,4 +65,9 @@ option{
     height: 260px;
     left: 400px;
     top: 120px;
+}
+.center{
+    margin-left: 35%;
+    padding: 50px;
+    height: 80vh;
 }
